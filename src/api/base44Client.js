@@ -3,7 +3,7 @@ const ADMIN_EMAIL    = 'binshihinshi@gmail.com'
 const ADMIN_PASSWORD = 'Hinshi3562@'
 
 // ─── API URL ──────────────────────────────────────────────────────────────────
-const API_BASE = '/api/index.php'
+const API_BASE = 'https://hinshibinshi.com/api/index.php'
 
 // ──────────────────────────────────────────────────────────────────────────────
 //  PHP API REQUEST
