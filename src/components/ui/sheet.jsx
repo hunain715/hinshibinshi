@@ -1,0 +1,3 @@
+import React from 'react'; import {cn} from '@/lib/utils'
+export function Sheet({open=false,onOpenChange,children}){return <div>{React.Children.map(children,c=>React.isValidElement(c)?React.cloneElement(c,{open,onOpenChange}):c)}</div>}
+export function SheetContent({open,onOpenChange,side='left',className='',children,...props}){if(!open)return null;return <div className="fixed inset-0 z-[100]"><div className="absolute inset-0 bg-black/60" onClick={()=>onOpenChange?.(false)}/><div className={cn('absolute top-0 bottom-0 w-72 bg-obsidian border-white/10 border-r p-4',side==='right'?'right-0 border-l border-r-0':'left-0',className)} {...props}>{children}</div></div>}
